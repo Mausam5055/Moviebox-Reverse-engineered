@@ -187,3 +187,4 @@ Several Android services supporting inter-process communication (between the `:m
 ### For End-Users:
 - **Do not install modified / cracked application binaries:** Modded APK distributions that request `REQUEST_INSTALL_PACKAGES` can be weaponized at any time via remote updates without user re-authentication.
 - **Revoke dangerous permissions:** Disallow Location and Phone State permissions under Android App Settings for applications that only require media playback capabilities.
+
