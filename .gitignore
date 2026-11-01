@@ -1,3 +1,8 @@
+# Duplicate copy files
+* - Copy.md
+*- Copy.md
+decompiled/logs/
+
 # Node Dependencies
 node_modules/
 */node_modules/
