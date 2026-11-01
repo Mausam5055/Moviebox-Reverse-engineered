@@ -1,0 +1,163 @@
+package com.transsion.room.sub.bean.subscription;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.Keep;
+import androidx.compose.foundation.e;
+import com.cloud.config.utils.CommonUtils;
+import com.cloud.tmc.offline.download.constants.OfflineConstantsKt;
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: loaded from: classes6.dex */
+@Keep
+@Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0014\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B5\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\b\u0010\tJ\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0007HÆ\u0003J7\u0010\u001a\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0006\u0010\u001b\u001a\u00020\u001cJ\u0013\u0010\u001d\u001a\u00020\u00072\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fHÖ\u0003J\t\u0010 \u001a\u00020\u001cHÖ\u0001J\t\u0010!\u001a\u00020\u0003HÖ\u0001J\u0016\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u001cR\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000b\"\u0004\b\u000f\u0010\rR\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u000b\"\u0004\b\u0011\u0010\rR\u001a\u0010\u0006\u001a\u00020\u0007X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015¨\u0006'"}, d2 = {"Lcom/transsion/room/sub/bean/subscription/CreatorInfoFeed;", "Landroid/os/Parcelable;", CommonUtils.PARAM_UID, "", "nickname", "avatar", "hasSubscribe", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "getUid", "()Ljava/lang/String;", "setUid", "(Ljava/lang/String;)V", "getNickname", "setNickname", "getAvatar", "setAvatar", "getHasSubscribe", "()Z", "setHasSubscribe", "(Z)V", "component1", "component2", "component3", "component4", "copy", "describeContents", "", "equals", OfflineConstantsKt.OFFLINE_DOWNLOAD_CHANNEL_MODE_OTHER, "", "hashCode", "toString", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "Room_psRelease"}, k = 1, mv = {2, 1, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+public final /* data */ class CreatorInfoFeed implements Parcelable {
+    public static final Parcelable.Creator<CreatorInfoFeed> CREATOR = new a();
+    private String avatar;
+    private boolean hasSubscribe;
+    private String nickname;
+    private String uid;
+
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public final CreatorInfoFeed createFromParcel(Parcel parcel) {
+            Intrinsics.h(parcel, "parcel");
+            return new CreatorInfoFeed(parcel.readString(), parcel.readString(), parcel.readString(), parcel.readInt() != 0);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public final CreatorInfoFeed[] newArray(int i11) {
+            return new CreatorInfoFeed[i11];
+        }
+    }
+
+    public CreatorInfoFeed() {
+        this(null, null, null, false, 15, null);
+    }
+
+    public CreatorInfoFeed(String str, String str2, String str3, boolean z10) {
+        this.uid = str;
+        this.nickname = str2;
+        this.avatar = str3;
+        this.hasSubscribe = z10;
+    }
+
+    public /* synthetic */ CreatorInfoFeed(String str, String str2, String str3, boolean z10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i11 & 1) != 0 ? null : str, (i11 & 2) != 0 ? null : str2, (i11 & 4) != 0 ? null : str3, (i11 & 8) != 0 ? false : z10);
+    }
+
+    public static /* synthetic */ CreatorInfoFeed copy$default(CreatorInfoFeed creatorInfoFeed, String str, String str2, String str3, boolean z10, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            str = creatorInfoFeed.uid;
+        }
+        if ((i11 & 2) != 0) {
+            str2 = creatorInfoFeed.nickname;
+        }
+        if ((i11 & 4) != 0) {
+            str3 = creatorInfoFeed.avatar;
+        }
+        if ((i11 & 8) != 0) {
+            z10 = creatorInfoFeed.hasSubscribe;
+        }
+        return creatorInfoFeed.copy(str, str2, str3, z10);
+    }
+
+    /* JADX INFO: renamed from: component1, reason: from getter */
+    public final String getUid() {
+        return this.uid;
+    }
+
+    /* JADX INFO: renamed from: component2, reason: from getter */
+    public final String getNickname() {
+        return this.nickname;
+    }
+
+    /* JADX INFO: renamed from: component3, reason: from getter */
+    public final String getAvatar() {
+        return this.avatar;
+    }
+
+    /* JADX INFO: renamed from: component4, reason: from getter */
+    public final boolean getHasSubscribe() {
+        return this.hasSubscribe;
+    }
+
+    public final CreatorInfoFeed copy(String uid, String nickname, String avatar, boolean hasSubscribe) {
+        return new CreatorInfoFeed(uid, nickname, avatar, hasSubscribe);
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof CreatorInfoFeed)) {
+            return false;
+        }
+        CreatorInfoFeed creatorInfoFeed = (CreatorInfoFeed) other;
+        return Intrinsics.c(this.uid, creatorInfoFeed.uid) && Intrinsics.c(this.nickname, creatorInfoFeed.nickname) && Intrinsics.c(this.avatar, creatorInfoFeed.avatar) && this.hasSubscribe == creatorInfoFeed.hasSubscribe;
+    }
+
+    public final String getAvatar() {
+        return this.avatar;
+    }
+
+    public final boolean getHasSubscribe() {
+        return this.hasSubscribe;
+    }
+
+    public final String getNickname() {
+        return this.nickname;
+    }
+
+    public final String getUid() {
+        return this.uid;
+    }
+
+    public int hashCode() {
+        String str = this.uid;
+        int iHashCode = (str == null ? 0 : str.hashCode()) * 31;
+        String str2 = this.nickname;
+        int iHashCode2 = (iHashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
+        String str3 = this.avatar;
+        return ((iHashCode2 + (str3 != null ? str3.hashCode() : 0)) * 31) + e.a(this.hasSubscribe);
+    }
+
+    public final void setAvatar(String str) {
+        this.avatar = str;
+    }
+
+    public final void setHasSubscribe(boolean z10) {
+        this.hasSubscribe = z10;
+    }
+
+    public final void setNickname(String str) {
+        this.nickname = str;
+    }
+
+    public final void setUid(String str) {
+        this.uid = str;
+    }
+
+    public String toString() {
+        return "CreatorInfoFeed(uid=" + this.uid + ", nickname=" + this.nickname + ", avatar=" + this.avatar + ", hasSubscribe=" + this.hasSubscribe + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int flags) {
+        Intrinsics.h(dest, "dest");
+        dest.writeString(this.uid);
+        dest.writeString(this.nickname);
+        dest.writeString(this.avatar);
+        dest.writeInt(this.hasSubscribe ? 1 : 0);
+    }
+}

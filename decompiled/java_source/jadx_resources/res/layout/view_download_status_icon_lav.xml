@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.lottie.LottieAnimationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lav_download_icon"
+    android:visibility="gone"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:scaleType="centerInside"
+    app:lottie_autoPlay="false"
+    app:lottie_fileName="download_icon_status_anima_home.json"/>

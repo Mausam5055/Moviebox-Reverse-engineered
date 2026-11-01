@@ -1,0 +1,41 @@
+.class Lcom/mbridge/msdk/click/retry/a$b;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/mbridge/msdk/click/retry/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "b"
+.end annotation
+
+
+# static fields
+.field private static a:Lcom/mbridge/msdk/click/retry/a;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/mbridge/msdk/click/retry/a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/mbridge/msdk/click/retry/a;-><init>(Lcom/mbridge/msdk/click/retry/a$a;)V
+
+    sput-object v0, Lcom/mbridge/msdk/click/retry/a$b;->a:Lcom/mbridge/msdk/click/retry/a;
+
+    return-void
+.end method
+
+.method static synthetic a()Lcom/mbridge/msdk/click/retry/a;
+    .locals 1
+
+    sget-object v0, Lcom/mbridge/msdk/click/retry/a$b;->a:Lcom/mbridge/msdk/click/retry/a;
+
+    return-object v0
+.end method

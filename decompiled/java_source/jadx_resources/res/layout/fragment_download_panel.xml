@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.tn.lib.view.AdvRecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:adv_layout_empty="@layout/download_empty_default"
+            app:adv_layout_error="@layout/download_empty_default"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.transsnet.downloader.widget.DownloadTransferLaterTipsView
+        android:layout_gravity="bottom"
+        android:id="@+id/v_transfer_later_tips"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+</FrameLayout>

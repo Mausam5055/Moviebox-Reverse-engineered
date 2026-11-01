@@ -1,0 +1,339 @@
+.class Lcom/cloud/hisavana/sdk/d2$a;
+.super Landroidx/room/h;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/cloud/hisavana/sdk/d2;-><init>(Landroidx/room/RoomDatabase;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic d:Lcom/cloud/hisavana/sdk/d2;
+
+
+# direct methods
+.method constructor <init>(Lcom/cloud/hisavana/sdk/d2;Landroidx/room/RoomDatabase;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/cloud/hisavana/sdk/d2$a;->d:Lcom/cloud/hisavana/sdk/d2;
+
+    invoke-direct {p0, p2}, Landroidx/room/h;-><init>(Landroidx/room/RoomDatabase;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected e()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "INSERT OR REPLACE INTO `default_ad_room` (`ad_creative_id`,`codeSeatId`,`ad_type`,`price`,`ad_request_ver`,`displayed_times`,`displayed_date`,`start_date`,`end_date`,`display_max_times`,`file_path`,`default_country_white`,`default_country_black`,`default_brand_white`,`default_brand_black`,`ad_bean`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+
+    return-object v0
+.end method
+
+.method protected bridge synthetic j(La4/h;Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p2, Lcom/cloud/hisavana/sdk/g2;
+
+    invoke-virtual {p0, p1, p2}, Lcom/cloud/hisavana/sdk/d2$a;->n(La4/h;Lcom/cloud/hisavana/sdk/g2;)V
+
+    return-void
+.end method
+
+.method protected n(La4/h;Lcom/cloud/hisavana/sdk/g2;)V
+    .locals 4
+
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_0
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->e()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    if-nez v0, :cond_1
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_1
+
+    :cond_1
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->e()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_1
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->d()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/4 v2, 0x3
+
+    invoke-interface {p1, v2, v0, v1}, La4/f;->c(IJ)V
+
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->o()Ljava/lang/Double;
+
+    move-result-object v0
+
+    const/4 v1, 0x4
+
+    if-nez v0, :cond_2
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_2
+
+    :cond_2
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->o()Ljava/lang/Double;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Double;->doubleValue()D
+
+    move-result-wide v2
+
+    invoke-interface {p1, v1, v2, v3}, La4/f;->a(ID)V
+
+    :goto_2
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->c()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/4 v2, 0x5
+
+    invoke-interface {p1, v2, v0, v1}, La4/f;->c(IJ)V
+
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->l()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/4 v2, 0x6
+
+    invoke-interface {p1, v2, v0, v1}, La4/f;->c(IJ)V
+
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->k()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x7
+
+    if-nez v0, :cond_3
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_3
+
+    :cond_3
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->k()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_3
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->p()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    if-nez v0, :cond_4
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_4
+
+    :cond_4
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->p()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_4
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->m()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x9
+
+    if-nez v0, :cond_5
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_5
+
+    :cond_5
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->m()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_5
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->j()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/16 v2, 0xa
+
+    invoke-interface {p1, v2, v0, v1}, La4/f;->c(IJ)V
+
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->n()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0xb
+
+    if-nez v0, :cond_6
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_6
+
+    :cond_6
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->n()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_6
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->i()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0xc
+
+    if-nez v0, :cond_7
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_7
+
+    :cond_7
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->i()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_7
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->h()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0xd
+
+    if-nez v0, :cond_8
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_8
+
+    :cond_8
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->h()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_8
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0xe
+
+    if-nez v0, :cond_9
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_9
+
+    :cond_9
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_9
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->f()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0xf
+
+    if-nez v0, :cond_a
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_a
+
+    :cond_a
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->f()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v0}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_a
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x10
+
+    if-nez v0, :cond_b
+
+    invoke-interface {p1, v1}, La4/f;->g(I)V
+
+    goto :goto_b
+
+    :cond_b
+    invoke-virtual {p2}, Lcom/cloud/hisavana/sdk/g2;->a()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-interface {p1, v1, p2}, La4/f;->y(ILjava/lang/String;)V
+
+    :goto_b
+    return-void
+.end method

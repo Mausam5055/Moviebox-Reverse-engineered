@@ -1,0 +1,40 @@
+.class final Landroidx/compose/ui/platform/x1;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final a:Landroidx/compose/ui/platform/x1;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/compose/ui/platform/x1;
+
+    invoke-direct {v0}, Landroidx/compose/ui/platform/x1;-><init>()V
+
+    sput-object v0, Landroidx/compose/ui/platform/x1;->a:Landroidx/compose/ui/platform/x1;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/graphics/RenderNode;Landroidx/compose/ui/graphics/w4;)V
+    .locals 0
+
+    const/4 p2, 0x0
+
+    invoke-static {p1, p2}, Landroidx/compose/ui/graphics/layer/m0;->a(Landroid/graphics/RenderNode;Landroid/graphics/RenderEffect;)Z
+
+    return-void
+.end method

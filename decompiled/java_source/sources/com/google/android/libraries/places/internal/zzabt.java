@@ -1,0 +1,12 @@
+package com.google.android.libraries.places.internal;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zzabt extends zzato implements zzavg {
+    private zzabt() {
+        throw null;
+    }
+
+    /* synthetic */ zzabt(zzabf zzabfVar) {
+        super(zzabu.zzb);
+    }
+}

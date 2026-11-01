@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="@color/text_02"
+    android:id="@+id/sub_operation_rankinglist_tab_text"
+    android:background="@drawable/bg_radius_12_f03930"
+    android:paddingLeft="8dp"
+    android:paddingTop="4dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="4dp"
+    style="@style/style_medium_text"/>

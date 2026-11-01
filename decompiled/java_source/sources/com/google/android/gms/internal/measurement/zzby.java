@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.measurement;
+
+import android.os.IBinder;
+import android.os.IInterface;
+
+/* JADX INFO: loaded from: classes4.dex */
+public abstract class zzby extends zzbx implements zzbz {
+    public static zzbz zza(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.google.android.finsky.externalreferrer.IGetInstallReferrerService");
+        return iInterfaceQueryLocalInterface instanceof zzbz ? (zzbz) iInterfaceQueryLocalInterface : new zzca(iBinder);
+    }
+}

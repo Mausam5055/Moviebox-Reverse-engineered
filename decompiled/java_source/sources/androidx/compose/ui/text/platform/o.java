@@ -1,0 +1,8 @@
+package androidx.compose.ui.text.platform;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class o {
+    public static final p a() {
+        return new p();
+    }
+}

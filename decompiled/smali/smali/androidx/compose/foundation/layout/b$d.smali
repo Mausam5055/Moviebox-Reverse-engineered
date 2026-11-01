@@ -1,0 +1,21 @@
+.class public interface abstract Landroidx/compose/foundation/layout/b$d;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/foundation/layout/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "d"
+.end annotation
+
+
+# virtual methods
+.method public abstract a()F
+.end method
+
+.method public abstract b(Lo0/e;I[ILandroidx/compose/ui/unit/LayoutDirection;[I)V
+.end method

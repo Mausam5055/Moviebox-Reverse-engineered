@@ -1,0 +1,87 @@
+package com.transsnet.login;
+
+/* JADX INFO: loaded from: classes7.dex */
+public final class R$string {
+    public static int google_client_token = 2131886746;
+    public static int login = 2131886926;
+    public static int login_account_err = 2131886927;
+    public static int login_already_have_account = 2131886928;
+    public static int login_continue_with_email = 2131886929;
+    public static int login_continue_with_gp = 2131886930;
+    public static int login_continue_with_phone_or_email = 2131886931;
+    public static int login_email_code_tips = 2131886933;
+    public static int login_email_err = 2131886934;
+    public static int login_email_not_exist = 2131886935;
+    public static int login_enter_email = 2131886936;
+    public static int login_enter_email_hint = 2131886937;
+    public static int login_enter_phone_number = 2131886938;
+    public static int login_existed = 2131886939;
+    public static int login_hava_invitation_code = 2131886940;
+    public static int login_incorrect_pwd = 2131886941;
+    public static int login_interest_explore = 2131886942;
+    public static int login_interest_tips = 2131886943;
+    public static int login_interest_tips2 = 2131886944;
+    public static int login_invitation_code_err = 2131886945;
+    public static int login_invitation_code_hint = 2131886946;
+    public static int login_log_in = 2131886947;
+    public static int login_net_err = 2131886948;
+    public static int login_next = 2131886949;
+    public static int login_or = 2131886950;
+    public static int login_or_sign_up_with = 2131886951;
+    public static int login_phone_code_enter = 2131886952;
+    public static int login_phone_code_hint = 2131886953;
+    public static int login_phone_code_resend = 2131886954;
+    public static int login_phone_code_tips = 2131886955;
+    public static int login_phone_err = 2131886956;
+    public static int login_phone_not_exist = 2131886957;
+    public static int login_privacy = 2131886958;
+    public static int login_pwd_done = 2131886959;
+    public static int login_pwd_enter_new = 2131886960;
+    public static int login_pwd_err = 2131886961;
+    public static int login_pwd_find = 2131886962;
+    public static int login_pwd_forget = 2131886963;
+    public static int login_pwd_forgot_no = 2131886964;
+    public static int login_pwd_forgot_tips = 2131886965;
+    public static int login_pwd_forgot_yes = 2131886966;
+    public static int login_pwd_hint = 2131886967;
+    public static int login_pwd_max_len_tips = 2131886968;
+    public static int login_pwd_new_hint = 2131886969;
+    public static int login_pwd_new_tips = 2131886970;
+    public static int login_pwd_rule = 2131886971;
+    public static int login_pwd_rule_error = 2131886972;
+    public static int login_pwd_set_hi = 2131886973;
+    public static int login_pwd_set_hint = 2131886974;
+    public static int login_pwd_set_new = 2131886975;
+    public static int login_pwd_set_now = 2131886976;
+    public static int login_pwd_set_success = 2131886977;
+    public static int login_pwd_set_tips = 2131886978;
+    public static int login_pwd_welcome = 2131886979;
+    public static int login_seconds = 2131886980;
+    public static int login_select_country = 2131886981;
+    public static int login_select_country_code = 2131886982;
+    public static int login_select_country_code_tips = 2131886983;
+    public static int login_send_code = 2131886984;
+    public static int login_sign_up = 2131886985;
+    public static int login_sign_up_for_app = 2131886986;
+    public static int login_sign_up_now = 2131886987;
+    public static int login_sign_up_privacy = 2131886988;
+    public static int login_sign_up_success = 2131886989;
+    public static int login_sign_up_with_phone = 2131886990;
+    public static int login_signed_out_toast = 2131886991;
+    public static int login_skip = 2131886992;
+    public static int login_success = 2131886993;
+    public static int login_use_email_continue = 2131886994;
+    public static int login_use_email_login = 2131886995;
+    public static int login_use_phone_continue = 2131886996;
+    public static int login_use_phone_login = 2131886997;
+    public static int login_user_agreement = 2131886998;
+    public static int login_verifcation_err = 2131886999;
+    public static int login_verify = 2131887000;
+    public static int login_verify_code_tips = 2131887001;
+    public static int login_with_email = 2131887002;
+    public static int login_with_phone = 2131887003;
+    public static int login_your_phone_number = 2131887004;
+
+    private R$string() {
+    }
+}

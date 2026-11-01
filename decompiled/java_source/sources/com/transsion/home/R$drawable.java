@@ -1,0 +1,85 @@
+package com.transsion.home;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class R$drawable {
+    public static int apps_icon_more = 2131230931;
+    public static int bg_appointment_booked = 2131230948;
+    public static int bg_appointment_card = 2131230949;
+    public static int bg_appointment_corner = 2131230950;
+    public static int bg_category_cover_gradient = 2131230984;
+    public static int bg_category_first_item = 2131230985;
+    public static int bg_category_gradient = 2131230986;
+    public static int bg_claim_btn_6 = 2131230987;
+    public static int bg_hashtag_item_seleted = 2131231024;
+    public static int bg_hashtag_item_unseleted = 2131231025;
+    public static int bg_home_filter_all = 2131231027;
+    public static int bg_home_rank_list = 2131231028;
+    public static int bg_home_sub_banner_background = 2131231029;
+    public static int bg_home_sub_banner_bottom_mask = 2131231030;
+    public static int bg_home_tabs_item = 2131231031;
+    public static int bg_item_filter_tab = 2131231045;
+    public static int bg_movie_tv_gradient = 2131231102;
+    public static int bg_one_click_dialog = 2131231109;
+    public static int bg_post_title_tag = 2131231122;
+    public static int bg_preferences_container = 2131231123;
+    public static int bg_preferences_tag = 2131231124;
+    public static int bg_ranking_category_above_selected = 2131231168;
+    public static int bg_ranking_category_below_selected = 2131231169;
+    public static int bg_ranking_category_normal = 2131231170;
+    public static int bg_ranking_category_selected = 2131231171;
+    public static int bg_ranking_no1 = 2131231172;
+    public static int bg_ranking_no2 = 2131231173;
+    public static int bg_ranking_no3 = 2131231174;
+    public static int bg_ranking_normal = 2131231175;
+    public static int bg_ranking_tl_no1 = 2131231176;
+    public static int bg_ranking_tl_no2 = 2131231177;
+    public static int bg_ranking_tl_no3 = 2131231178;
+    public static int bg_ranking_tl_normal = 2131231179;
+    public static int bg_search_guide = 2131231194;
+    public static int bg_selected_filter_item = 2131231200;
+    public static int bg_sub_operation_appointment_icon = 2131231227;
+    public static int bg_tag_group = 2131231231;
+    public static int bg_trending_rank_title = 2131231238;
+    public static int bg_tv_player_bottom_gradient = 2131231240;
+    public static int bg_tv_player_top_gradient = 2131231241;
+    public static int black_30p_to_0p = 2131231259;
+    public static int gradient_film_list_header = 2131231446;
+    public static int home_bg_ugc_banner_background = 2131231464;
+    public static int home_mask_movie = 2131231465;
+    public static int home_title_gradient_bg = 2131231467;
+    public static int ic_appointment_hot = 2131231503;
+    public static int ic_close_dialog = 2131231534;
+    public static int ic_home_tab_menu = 2131231588;
+    public static int ic_preferences_close = 2131231688;
+    public static int ic_preferences_heart_selected = 2131231689;
+    public static int ic_preferences_heart_unselected = 2131231690;
+    public static int ic_sub_operation_appointment = 2131231730;
+    public static int ic_sub_operation_appointment_uncheck = 2131231731;
+    public static int ic_trending_arrow = 2131231755;
+    public static int ic_trending_download = 2131231756;
+    public static int ic_trending_play = 2131231757;
+    public static int ic_tv_back_white = 2131231758;
+    public static int ic_tv_channel_signal = 2131231759;
+    public static int ic_tv_channel_signal_dim = 2131231760;
+    public static int ic_tv_close = 2131231761;
+    public static int ic_tv_country_flag_default = 2131231762;
+    public static int ic_tv_country_selected = 2131231763;
+    public static int ic_tv_fullscreen = 2131231764;
+    public static int ic_tv_help = 2131231765;
+    public static int ic_tv_input_close = 2131231766;
+    public static int ic_tv_live_dot = 2131231768;
+    public static int ic_tv_setting = 2131231769;
+    public static int ic_ugc_rank_01 = 2131231775;
+    public static int ic_ugc_rank_02 = 2131231776;
+    public static int ic_ugc_rank_03 = 2131231777;
+    public static int ic_ugc_rank_default = 2131231778;
+    public static int ic_update_app = 2131231779;
+    public static int icon_ranking_title_left = 2131231812;
+    public static int icon_ranking_title_right = 2131231813;
+    public static int icon_ugc_user_upload = 2131231815;
+    public static int selector_tv_tap_lock = 2131232525;
+    public static int shape_circle = 2131232551;
+
+    private R$drawable() {
+    }
+}

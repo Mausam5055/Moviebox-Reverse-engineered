@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.noober.background.view.BLLinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:paddingHorizontal="8dp"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/module_05">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/text_02"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_permission_tips"
+            android:drawablePadding="2dp"
+            android:layout_weight="1"
+            android:paddingVertical="13dp"
+            app:drawableStartCompat="@drawable/ic_location"
+            style="@style/style_regular_text"/>
+        <com.noober.background.view.BLTextView
+            android:textColor="@color/text_02"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_allow"
+            android:layout_width="49dp"
+            android:layout_height="24dp"
+            android:text="@string/permission_notice_allow"
+            app:bl_corners_radius="4dp"
+            app:bl_solid_color="@color/white_10"
+            style="@style/style_regular_text"/>
+    </com.noober.background.view.BLLinearLayout>
+</FrameLayout>

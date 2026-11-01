@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="8dp"
+    android:layout_width="76dp"
+    android:layout_height="76dp">
+    <RelativeLayout
+        android:id="@+id/rl_add"
+        android:background="@drawable/add_image_bg_radius"
+        android:layout_width="72dp"
+        android:layout_height="72dp">
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_select_add"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

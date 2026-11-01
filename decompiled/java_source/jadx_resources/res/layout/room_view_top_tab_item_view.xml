@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.tn.lib.widget.TnTextView
+        android:textSize="18sp"
+        android:textColor="@color/new_text_05"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_title"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:minWidth="48dp"
+        android:paddingHorizontal="12dp"
+        style="@style/style_import_text"/>
+    <com.noober.background.view.BLView
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/v_badge"
+        android:visibility="gone"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="6dp"
+        app:bl_corners_radius="3dp"
+        app:bl_solid_color="@color/error_red"/>
+    <com.noober.background.view.BLTextView
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/tv_badge"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:minWidth="12dp"
+        android:paddingHorizontal="2dp"
+        app:bl_corners_bottomRightRadius="3dp"
+        app:bl_corners_topRadius="3dp"
+        app:bl_solid_color="@color/error_red"
+        style="@style/style_import_text"/>
+</merge>

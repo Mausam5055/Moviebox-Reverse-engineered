@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>H5 Ad Bridge 测试</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, sans-serif; background: #f2f2f7; padding: 16px; }
+        h2 { font-size: 18px; color: #1c1c1e; margin-bottom: 12px; }
+        .card { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+        label { display: block; font-size: 13px; color: #6c6c70; margin-bottom: 4px; }
+        input[type="text"] { width: 100%; border: 1px solid #d1d1d6; border-radius: 8px; padding: 8px 12px; font-size: 14px; outline: none; margin-bottom: 12px; }
+        input[type="text"]:focus { border-color: #007aff; }
+        .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+        button { flex: 1; min-width: 120px; padding: 10px 0; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity 0.15s; }
+        button:active { opacity: 0.7; }
+        .btn-interstitial { background: #007aff; color: #fff; }
+        .btn-video        { background: #34c759; color: #fff; }
+        .btn-error        { background: #ff3b30; color: #fff; }
+        .btn-clear        { background: #e5e5ea; color: #3c3c43; }
+        .btn-diag         { background: #ff9f0a; color: #fff; }
+        #log { background: #1c1c1e; border-radius: 12px; padding: 12px; font-family: 'Menlo', 'Courier New', monospace; font-size: 12px; line-height: 1.6; min-height: 200px; max-height: 400px; overflow-y: auto; word-break: break-all; }
+        .log-info    { color: #64d2ff; }
+        .log-success { color: #32d74b; }
+        .log-error   { color: #ff453a; }
+        .log-warn    { color: #ffd60a; }
+        .log-native  { color: #bf5af2; }
+        #bridgeStatus { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #ff3b30; margin-right: 6px; vertical-align: middle; }
+        #bridgeStatus.ready { background: #34c759; }
+        .status-text { font-size: 13px; color: #6c6c70; vertical-align: middle; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>H5 Ad Bridge 测试</h2>
+    <div>
+        <span id="bridgeStatus"></span>
+        <span class="status-text" id="bridgeStatusText">Bridge 初始化中…</span>
+    </div>
+</div>
+
+<div class="card">
+    <label>sceneId（广告场景 ID）</label>
+    <input type="text" id="sceneId" value="test_scene_001" placeholder="输入 sceneId">
+    <div class="btn-row">
+        <button class="btn-interstitial" onclick="openAd(4)">插屏广告 (adType=4)</button>
+        <button class="btn-video" onclick="openAd(3)">激励视频 (adType=3)</button>
+    </div>
+</div>
+
+<div class="card">
+    <label>异常参数测试</label>
+    <div class="btn-row">
+        <button class="btn-error" onclick="openAdEmpty()">adConfig 为空</button>
+        <button class="btn-error" onclick="openAdNoScene()">sceneId 为空</button>
+        <button class="btn-error" onclick="openAdUnknownType()">未知 adType(99)</button>
+    </div>
+</div>
+
+<div class="card">
+    <label>诊断</label>
+    <div class="btn-row">
+        <button class="btn-diag" onclick="diagnose()">诊断 Bridge 状态</button>
+        <button class="btn-diag" onclick="simulateNativeCallback()">模拟 native 回调</button>
+    </div>
+</div>
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <h2 style="margin:0">日志</h2>
+        <button class="btn-clear" style="flex:none;padding:6px 14px;font-size:12px;" onclick="clearLog()">清空</button>
+    </div>
+    <div id="log"></div>
+</div>
+
+<script>
+    // ─── 日志 ──────────────────────────────────────────────────
+    function log(msg, type) {
+        var cls = 'log-' + (type || 'info');
+        var time = new Date().toLocaleTimeString();
+        var el = document.getElementById('log');
+        el.innerHTML += '<div class="' + cls + '">[' + time + '] ' + escapeHtml(msg) + '</div>';
+        el.scrollTop = el.scrollHeight;
+    }
+    function escapeHtml(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+    function clearLog() { document.getElementById('log').innerHTML = ''; }
+
+    // ─── 页面级回调表 ──────────────────────────────────────────
+    var pageCallbacks = {};
+
+    // native sendResponse → dispatchMessage → loadUrl("javascript:WebViewJavascriptBridge._handleMessageFromNative(json)")
+    // 无论 bridge.js 是否注入，此函数必须存在且能处理回调
+    function handleMessageFromNative(messageJSON) {
+        log('[Bridge] _handleMessageFromNative 触发，数据: ' + String(messageJSON).substring(0, 120), 'info');
+        try {
+            var msg = JSON.parse(messageJSON);
+            if (msg.responseId && pageCallbacks[msg.responseId]) {
+                pageCallbacks[msg.responseId](msg.responseData);
+                delete pageCallbacks[msg.responseId];
+            }
+        } catch(e) {
+            log('[Bridge] 解析异常: ' + e.message, 'error');
+        }
+    }
+
+    // 在 bridge.js 注入前先占位，保证 native loadUrl 调用不会因对象不存在而报错
+    // bridge.js 的 IIFE 检查：if (window.WebViewJavascriptBridge && window.WebViewJavascriptBridge.inited) return
+    // inited 未设置时 IIFE 会继续执行并覆盖 _handleMessageFromNative，所以 WebViewJavascriptBridgeReady 后需重装
+    window.WebViewJavascriptBridge = {
+        _handleMessageFromNative: handleMessageFromNative
+    };
+    log('Bridge 占位初始化完成（shim）', 'info');
+
+    // bridge.js 注入后会覆盖 _handleMessageFromNative，在 ready 事件里重新挂回我们的处理器
+    document.addEventListener('WebViewJavascriptBridgeReady', function(e) {
+        var b = e.bridge;
+        b._handleMessageFromNative = handleMessageFromNative;
+        document.getElementById('bridgeStatus').classList.add('ready');
+        document.getElementById('bridgeStatusText').textContent = 'Bridge 已就绪（完整模式）';
+        log('WebViewJavascriptBridge 就绪，hook 重装完成', 'success');
+    }, false);
+
+    // ─── 诊断 ──────────────────────────────────────────────────
+    function diagnose() {
+        log('--- 诊断 ---', 'warn');
+        log('MBAdJsBridge: ' + (window.MBAdJsBridge ? '已注入' : '未注入'), window.MBAdJsBridge ? 'success' : 'error');
+        log('WebViewJavascriptBridge: ' + (window.WebViewJavascriptBridge ? '存在' : '不存在'), 'info');
+        log('_handleMessageFromNative: ' + (typeof window.WebViewJavascriptBridge._handleMessageFromNative), 'info');
+        log('pageCallbacks 数量: ' + Object.keys(pageCallbacks).length, 'info');
+    }
+
+    function simulateNativeCallback() {
+        var id = 'sim_' + new Date().getTime();
+        pageCallbacks[id] = function(data) {
+            log('[模拟] 回调触达: ' + data, 'success');
+        };
+        var fakeMsg = JSON.stringify({ responseId: id, responseData: JSON.stringify({ state: 'rewarded', msg: '模拟成功' }) });
+        log('[模拟] 触发 _handleMessageFromNative', 'warn');
+        window.WebViewJavascriptBridge._handleMessageFromNative(fakeMsg);
+    }
+
+    // ─── 调用 openMbAd ─────────────────────────────────────────
+    function callNativeAd(adConfig) {
+        if (!window.MBAdJsBridge) {
+            log('MBAdJsBridge 未注入，请在真机 WebView 中打开', 'error');
+            return;
+        }
+
+        var callbackId = 'cb_' + new Date().getTime() + '_' + Math.floor(Math.random() * 100000);
+        pageCallbacks[callbackId] = function(responseData) {
+            handleAdResponse(responseData);
+        };
+
+        log('[调用] openMbAd  adConfig=' + (adConfig || '""') + '  callbackId=' + callbackId, 'native');
+        window.MBAdJsBridge.openMbAd(adConfig, callbackId);
+    }
+
+    function handleAdResponse(responseData) {
+        try {
+            var result = typeof responseData === 'string' ? JSON.parse(responseData) : responseData;
+            var state = result.state || '';
+            var isOk = state.toLowerCase().indexOf('fail') === -1;
+            log('[回调] state=' + state + '  msg=' + (result.msg || ''), isOk ? 'success' : 'error');
+        } catch(e) {
+            log('[回调] 解析失败，原始数据: ' + responseData, 'error');
+        }
+    }
+
+    // ─── 按钮 ──────────────────────────────────────────────────
+    function openAd(adType) {
+        var sceneId = document.getElementById('sceneId').value.trim();
+        if (!sceneId) { log('sceneId 不能为空', 'warn'); return; }
+        callNativeAd(JSON.stringify({ sceneId: sceneId, adType: adType }));
+    }
+    function openAdEmpty()       { callNativeAd(''); }
+    function openAdNoScene()     { callNativeAd(JSON.stringify({ sceneId: '', adType: 4 })); }
+    function openAdUnknownType() {
+        var sceneId = document.getElementById('sceneId').value.trim() || 'test_scene';
+        callNativeAd(JSON.stringify({ sceneId: sceneId, adType: 99 }));
+    }
+</script>
+</body>
+</html>

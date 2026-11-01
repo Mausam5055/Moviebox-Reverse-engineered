@@ -1,0 +1,19 @@
+package kotlinx.coroutines.debug.internal;
+
+import android.support.v4.media.session.c;
+import com.mbridge.msdk.foundation.download.core.DownloadCommon;
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import java.util.Comparator;
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: loaded from: classes7.dex */
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\b\n\u0002\b\u0007\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u000e\u0010\u0003\u001a\n \u0004*\u0004\u0018\u0001H\u0002H\u00022\u000e\u0010\u0005\u001a\n \u0004*\u0004\u0018\u0001H\u0002H\u0002H\n¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"<anonymous>", "", "T", "a", "kotlin.jvm.PlatformType", DownloadCommon.DOWNLOAD_REPORT_FIND_FILE_RESULT_VALUE_B, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", "kotlin/comparisons/ComparisonsKt__ComparisonsKt$compareBy$2"}, k = 3, mv = {2, 0, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+@SourceDebugExtension
+public final class DebugProbesImpl$dumpCoroutinesSynchronized$$inlined$sortedBy$1<T> implements Comparator {
+    @Override // java.util.Comparator
+    public final int compare(T t11, T t12) {
+        c.a(t11);
+        throw null;
+    }
+}

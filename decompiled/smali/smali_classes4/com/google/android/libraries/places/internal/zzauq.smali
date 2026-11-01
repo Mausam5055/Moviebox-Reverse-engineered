@@ -1,0 +1,2 @@
+.class public final synthetic Lcom/google/android/libraries/places/internal/zzauq;
+.super Ljava/lang/Object;

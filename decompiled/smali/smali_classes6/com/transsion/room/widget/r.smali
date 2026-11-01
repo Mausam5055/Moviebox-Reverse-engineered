@@ -1,0 +1,37 @@
+.class public final synthetic Lcom/transsion/room/widget/r;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:Lcom/transsion/room/widget/RoomsHomeBaseView;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/transsion/room/widget/RoomsHomeBaseView;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/transsion/room/widget/r;->a:Lcom/transsion/room/widget/RoomsHomeBaseView;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/transsion/room/widget/r;->a:Lcom/transsion/room/widget/RoomsHomeBaseView;
+
+    check-cast p1, Lcom/transsnet/flow/event/sync/event/JoinRoomEvent;
+
+    invoke-static {v0, p1}, Lcom/transsion/room/widget/RoomsHomeBaseView;->k(Lcom/transsion/room/widget/RoomsHomeBaseView;Lcom/transsnet/flow/event/sync/event/JoinRoomEvent;)Lkotlin/Unit;
+
+    move-result-object p1
+
+    return-object p1
+.end method

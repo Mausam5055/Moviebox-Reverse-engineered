@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <com.noober.background.view.BLView
+        android:layout_gravity="center"
+        android:id="@+id/v_all_ep_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/white_10"/>
+    <com.tn.lib.widget.TnTextView
+        android:textColor="@color/text_01"
+        android:layout_gravity="center"
+        android:id="@+id/tv_all_episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/download_series_all_episodes"
+        android:drawablePadding="2dp"
+        app:drawableEndCompat="@drawable/libui_ic_medium_arrow_right"
+        style="@style/style_medium_text"/>
+</FrameLayout>

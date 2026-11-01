@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_clip_corners_2"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_gravity="center_vertical"
+        android:id="@+id/innerRadioButton"
+        android:background="@color/clear"
+        android:clickable="false"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:button="@drawable/selector_green_radio"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14sp"
+        android:textColor="@color/pair_text_191F2B"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/innerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>

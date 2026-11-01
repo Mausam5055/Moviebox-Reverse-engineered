@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start|center_vertical"
+    android:id="@+id/ll_room"
+    android:background="@drawable/movie_detail_room_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_marginTop="8dp"
+    android:paddingStart="3dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ll_link">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_room_cover"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/label_circle_foc"
+        app:shapeAppearanceOverlay="@style/roundStyle_10"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="12sp"
+        android:textColor="@color/cl12"
+        android:ellipsize="end"
+        android:id="@+id/tv_room"
+        android:visibility="visible"
+        android:maxLines="1"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="20dp"
+        style="@style/style_regula_bigger_text"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/ic_group_arrow"
+        android:layout_marginStart="-20dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

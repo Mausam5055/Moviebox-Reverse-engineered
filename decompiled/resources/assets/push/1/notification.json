@@ -1,0 +1,94 @@
+{
+  "items": [{
+        "messageId":"4331044203095541992",
+        "title":"【Awkwafina Is Nora from Queens】Top Picks",
+        "desc":"With help from her dad and grandmother, Nora Lum navigates young adulthood in Flushing.",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+        "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=7466352442784240672\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/9132f49c6b0e84137c5040eac0f51e03.jpeg"
+    }, {
+        "messageId":"7189281854103900976",
+        "title":"【We Bare Bears】Anime Series",
+        "desc":"Three bear brothers do whatever they can to be a part of human society",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+        "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=7116517357841173168\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/e09c7507efc5a93492a1c0266e89ee82.jpeg"
+    },{
+        "messageId":"4528147055537181488",
+        "title":"【The School for Good and Evil】Feature Today",
+        "desc":"There Are Two Sides to Every Story.",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+        "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=3284763822313063464\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/350da71711f88b3059f4f457954bf91c.jpeg"
+    },{
+        "messageId":"7002030625847136976",
+        "title":"【Dahaad】Crime Time",
+        "desc":"Investigation of women's deaths in public bathrooms uncovers a serial killer.",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+        "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=3736098461305951968\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/68476f157fda4dcb8b89704c77fdb94e.jpeg"
+    },{
+        "messageId":"8061357302651179048",
+        "title":"【Wolf Pack】Fan Favorites",
+        "desc":"As the full moon rises, all teens come together to unravel the secret that connects them.",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+      "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=8128006892913314592\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/098c035aee73a906601c257ca9006b72.jpeg"
+    },{
+        "messageId":"427615196769831144",
+        "title":"【Abbott Elementary】Most Popular",
+        "desc":"Gathered in one of the country's most challenging public schools, a powerhouse team of educators.",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+        "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=633406645644710944\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/75c7f4f62e9ecb35397764546ac41e05.jpeg"
+    },{
+        "messageId":"4017828524714250960",
+        "title":"【Bo-ra! Deborah】New Releases",
+        "desc":"A romantic comedy between a love coach and a publishing planner who has difficulty loving.",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+        "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=375983595313320792\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/5c00f887f476ce4c654b9d4e456ed169.jpeg"
+    },{
+        "messageId":"8024378527585814760",
+        "title":"【All of Us Are Dead】Recently Added",
+        "desc":"A high school becomes ground zero for a zombie virus outbreak. ",
+        "source":"push",
+        "type":"1",
+        "style":"1",
+        "builtIn": "true",
+        "deeplink":"oneroom://com.community.oneroom?type=/movie/detail\u0026id=8126793059993537672\u0026channel=push\u0026msg_type=LocalPush",
+        "imageList":"push/1/image/d57dd094cf91587ad69b9811f32e2f76.jpeg"
+    }],
+  "config": {
+    "enable": true,
+    "startTime": "08",
+    "endTime": "22",
+    "pushGap": "2",
+    "shock": true,
+    "ring": true,
+    "floatingWindow": true,
+    "brightScreen": false,
+    "unlock": true
+  }
+}

@@ -1,0 +1,82 @@
+package com.tn.lib.widget;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class R$string {
+    public static int Enable = 2131886083;
+    public static int Join = 2131886085;
+    public static int Joined = 2131886086;
+    public static int Leave = 2131886087;
+    public static int View = 2131886098;
+    public static int ad_no_network = 2131886140;
+    public static int all = 2131886158;
+    public static int also_known_as = 2131886162;
+    public static int back_edit_tips = 2131886189;
+    public static int common_failed = 2131886321;
+    public static int download_now = 2131886451;
+    public static int error_load_failed = 2131886596;
+    public static int failed_toast = 2131886657;
+    public static int game_center = 2131886737;
+    public static int go_to_setting = 2131886743;
+    public static int home_fail_try_again = 2131886774;
+    public static int home_no_network_content = 2131886776;
+    public static int home_retry_text = 2131886781;
+    public static int load_failed = 2131886913;
+    public static int location_permission_dialog_tips = 2131886923;
+    public static int location_permission_tips = 2131886924;
+    public static int loding = 2131886925;
+    public static int me_no_ads = 2131887182;
+    public static int me_vip_free_downloads = 2131887184;
+    public static int me_vip_high_quality = 2131887185;
+    public static int me_vip_premium_basic = 2131887187;
+    public static int me_vip_premium_contents = 2131887188;
+    public static int me_vip_premium_pro = 2131887189;
+    public static int me_vip_save_to_phone = 2131887190;
+    public static int me_vip_upgrade = 2131887191;
+    public static int member_banner_remind_day = 2131887198;
+    public static int member_banner_remind_hour = 2131887199;
+    public static int member_banner_remind_month = 2131887200;
+    public static int member_banner_share_with_friends_family = 2131887201;
+    public static int member_banner_sign_in_on_tv_web_mobile = 2131887202;
+    public static int member_banner_unlock = 2131887203;
+    public static int member_banner_unlock_content = 2131887204;
+    public static int member_banner_unlock_title = 2131887205;
+    public static int member_banner_upgrade_to_premium_pro = 2131887206;
+    public static int member_banner_vip_btn_content = 2131887207;
+    public static int member_banner_vip_content = 2131887208;
+    public static int members = 2131887317;
+    public static int my_activity = 2131887634;
+    public static int my_likes = 2131887638;
+    public static int my_posts = 2131887639;
+    public static int no_connection = 2131887662;
+    public static int no_connection_restore_content_1 = 2131887663;
+    public static int no_connection_restore_content_2 = 2131887664;
+    public static int no_connection_restore_content_3 = 2131887665;
+    public static int no_connection_restore_title = 2131887666;
+    public static int no_content = 2131887667;
+    public static int no_error_content = 2131887668;
+    public static int no_more_ad_tips = 2131887671;
+    public static int no_network = 2131887672;
+    public static int no_network_tips = 2131887673;
+    public static int no_network_title = 2131887674;
+    public static int no_network_toast = 2131887675;
+    public static int no_result_default = 2131887676;
+    public static int on_line_now = 2131887705;
+    public static int player_copy_link = 2131887792;
+    public static int player_hide = 2131887797;
+    public static int player_more = 2131887798;
+    public static int player_share_friends = 2131887802;
+    public static int sources = 2131888217;
+    public static int submit = 2131888323;
+    public static int tab_downloads = 2131888371;
+    public static int tab_home = 2131888372;
+    public static int tab_me = 2131888373;
+    public static int tab_member = 2131888374;
+    public static int tab_member_center = 2131888375;
+    public static int tab_short_tv = 2131888376;
+    public static int tab_video = 2131888377;
+    public static int try_again = 2131888502;
+    public static int watch_later = 2131888807;
+
+    private R$string() {
+    }
+}

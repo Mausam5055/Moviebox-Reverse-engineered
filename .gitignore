@@ -1,0 +1,31 @@
+# Node Dependencies
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Local Tools and Binaries (JADX distribution & JRE)
+tools/
+*.log
+
+# Binary APKs (Excluded to prevent GitHub 100MB / DMCA distribution limits)
+*.apk
+
+# Build Outputs
+dist/
+dist-ssr/
+*.local
+
+# Editor & OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+

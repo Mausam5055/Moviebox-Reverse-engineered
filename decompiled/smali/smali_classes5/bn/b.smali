@@ -1,0 +1,114 @@
+.class public final Lbn/b;
+.super Lbn/a;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lbn/a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic b(Lcom/chad/library/adapter/base/viewholder/BaseViewHolder;Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p2, Lcom/transsion/moviedetailapi/bean/PostSubjectItem;
+
+    invoke-virtual {p0, p1, p2}, Lbn/b;->y(Lcom/chad/library/adapter/base/viewholder/BaseViewHolder;Lcom/transsion/moviedetailapi/bean/PostSubjectItem;)V
+
+    return-void
+.end method
+
+.method public l()I
+    .locals 1
+
+    sget-object v0, Lcom/transsion/moviedetailapi/bean/MediaType;->SUBJECT_DETAIL_NATIVE_AD:Lcom/transsion/moviedetailapi/bean/MediaType;
+
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public m()I
+    .locals 1
+
+    sget v0, Lcom/transsion/moviedetail/R$layout;->subject_detail_item_native_ad_layout:I
+
+    return v0
+.end method
+
+.method public y(Lcom/chad/library/adapter/base/viewholder/BaseViewHolder;Lcom/transsion/moviedetailapi/bean/PostSubjectItem;)V
+    .locals 4
+
+    const-string v0, "helper"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "item"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v0, Lcy/b;->a:Lcy/b;
+
+    invoke-virtual {p0}, Lcom/chad/library/adapter/base/provider/BaseItemProvider;->k()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Lcom/transsion/moviedetailapi/bean/PostSubjectItem;->getNonAdDelegate()Lcom/transsion/ad/bidding/nativead/BiddingNativeManager;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v2}, Lcom/transsion/ad/bidding/base/AbsAdBidding;->getSceneId()Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v3
+
+    :goto_0
+    invoke-virtual {v0, v1, v2}, Lcy/b;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/transsion/ad/bidding/base/r;
+
+    move-result-object v0
+
+    sget v1, Lcom/transsion/moviedetail/R$id;->adTrendingTAdNativeView:I
+
+    invoke-virtual {p1, v1}, Lcom/chad/library/adapter/base/viewholder/BaseViewHolder;->getViewOrNull(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/transsion/ad/view/native_ad/NativeWrapperAdView;
+
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p2}, Lcom/transsion/moviedetailapi/bean/PostSubjectItem;->getNonAdDelegate()Lcom/transsion/ad/bidding/nativead/BiddingNativeManager;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Lcom/transsion/moviedetailapi/bean/PostSubjectItem;->getNonAdDelegate()Lcom/transsion/ad/bidding/nativead/BiddingNativeManager;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_1
+
+    invoke-virtual {p2}, Lcom/transsion/ad/bidding/base/AbsAdBidding;->n0()Lcom/transsion/ad/bidding/base/BiddingIntermediateMaterialBean;
+
+    move-result-object v3
+
+    :cond_1
+    invoke-virtual {p1, v1, v0, v3}, Lcom/transsion/ad/view/native_ad/NativeWrapperAdView;->bindNativeView(Lcom/transsion/ad/bidding/nativead/BiddingNativeManager;Lcom/transsion/ad/bidding/base/r;Lcom/transsion/ad/bidding/base/BiddingIntermediateMaterialBean;)V
+
+    :cond_2
+    return-void
+.end method

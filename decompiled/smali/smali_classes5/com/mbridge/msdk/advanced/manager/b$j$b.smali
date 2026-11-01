@@ -1,0 +1,50 @@
+.class Lcom/mbridge/msdk/advanced/manager/b$j$b;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/mbridge/msdk/advanced/manager/b$j;->onFailedLoad(Ljava/lang/String;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/mbridge/msdk/advanced/manager/b$j;
+
+
+# direct methods
+.method constructor <init>(Lcom/mbridge/msdk/advanced/manager/b$j;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/mbridge/msdk/advanced/manager/b$j$b;->a:Lcom/mbridge/msdk/advanced/manager/b$j;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/mbridge/msdk/advanced/manager/b$j$b;->a:Lcom/mbridge/msdk/advanced/manager/b$j;
+
+    iget-object v1, v0, Lcom/mbridge/msdk/advanced/manager/b$j;->c:Lcom/mbridge/msdk/advanced/manager/b;
+
+    iget-object v2, v0, Lcom/mbridge/msdk/advanced/manager/b$j;->a:Lcom/mbridge/msdk/foundation/entity/CampaignEx;
+
+    iget v0, v0, Lcom/mbridge/msdk/advanced/manager/b$j;->b:I
+
+    invoke-static {v1, v2, v0}, Lcom/mbridge/msdk/advanced/manager/b;->b(Lcom/mbridge/msdk/advanced/manager/b;Lcom/mbridge/msdk/foundation/entity/CampaignEx;I)V
+
+    return-void
+.end method

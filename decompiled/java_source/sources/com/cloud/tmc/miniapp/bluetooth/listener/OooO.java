@@ -1,0 +1,6 @@
+package com.cloud.tmc.miniapp.bluetooth.listener;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface OooO {
+    void OooO00o(String str, String str2, byte[] bArr, int i11);
+}

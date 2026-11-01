@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:maxWidth="156dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="12sp"
+        android:textColor="@color/text_01"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:id="@+id/search_history_text"
+        android:background="@drawable/bg_search_history"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="160dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:paddingHorizontal="@dimen/dp_8"
+        android:paddingVertical="@dimen/dp_4"
+        style="@style/style_regula_bigger_text"/>
+    <View
+        android:layout_width="4dp"
+        android:layout_height="20dp"/>
+    <ImageView
+        android:id="@+id/search_hot_history_more_image"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_hide"
+        android:contentDescription="@string/more"
+        android:paddingStart="4dp"
+        android:paddingEnd="2dp"
+        android:paddingVertical="4dp"
+        app:tint="@color/white_80"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="30dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="12sp"
+        android:textColor="@color/short_tv_text_01"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tvName"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/short_tv_style_regular_text"/>
+    <com.transsion.shorttv_pugc.base.widget.ShortTvGradientTextView
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:id="@+id/tvNameSelected"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:includeFontPadding="false"
+        android:layout_marginHorizontal="8dp"
+        app:gradientTvCenterColor="@color/short_tv_main_gradient_center"
+        app:gradientTvEndColor="@color/short_tv_main_gradient_end"
+        app:gradientTvStartColor="@color/short_tv_main_gradient_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/short_tv_style_medium_text"/>
+</FrameLayout>

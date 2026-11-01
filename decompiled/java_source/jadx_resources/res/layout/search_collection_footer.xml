@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="11sp"
+    android:textColor="@color/white_80"
+    android:gravity="center"
+    android:background="@drawable/search_bg_footer_all"
+    android:layout_width="26dp"
+    android:layout_height="102dp"
+    android:text="All"
+    style="@style/style_regular_text"/>

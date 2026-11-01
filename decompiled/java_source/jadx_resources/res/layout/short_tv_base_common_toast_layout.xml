@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:bl_corners_radius="4dp"
+    app:bl_solid_color="@color/short_tv_black_70">
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/short_tv_white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@android:id/message"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+</com.noober.background.view.BLLinearLayout>

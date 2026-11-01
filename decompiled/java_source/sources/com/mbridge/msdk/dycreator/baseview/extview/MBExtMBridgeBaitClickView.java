@@ -1,0 +1,414 @@
+package com.mbridge.msdk.dycreator.baseview.extview;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.widget.RelativeLayout;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.mbridge.msdk.dycreator.baseview.GradientOrientationUtils;
+import com.mbridge.msdk.dycreator.baseview.cusview.MBridgeBaitClickView;
+import com.mbridge.msdk.dycreator.baseview.inter.InterBase;
+import com.mbridge.msdk.dycreator.engine.b;
+import com.mbridge.msdk.dycreator.engine.c;
+import com.mbridge.msdk.foundation.entity.CampaignEx;
+import com.mbridge.msdk.foundation.tools.g0;
+import com.mbridge.msdk.foundation.tools.o0;
+import com.transsion.gslb.Utils;
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class MBExtMBridgeBaitClickView extends MBridgeBaitClickView implements InterBase {
+
+    /* JADX INFO: renamed from: m, reason: collision with root package name */
+    private Map<String, String> f34658m;
+
+    /* JADX INFO: renamed from: com.mbridge.msdk.dycreator.baseview.extview.MBExtMBridgeBaitClickView$1, reason: invalid class name */
+    static /* synthetic */ class AnonymousClass1 {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        static final /* synthetic */ int[] f34659a;
+
+        static {
+            int[] iArr = new int[c.values().length];
+            f34659a = iArr;
+            try {
+                iArr[c.id.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f34659a[c.background.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f34659a[c.padding.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f34659a[c.gravity.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f34659a[c.visibility.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            try {
+                f34659a[c.layout_width.ordinal()] = 6;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                f34659a[c.layout_height.ordinal()] = 7;
+            } catch (NoSuchFieldError unused7) {
+            }
+            try {
+                f34659a[c.layout_centerHorizontal.ordinal()] = 8;
+            } catch (NoSuchFieldError unused8) {
+            }
+            try {
+                f34659a[c.layout_alignParentBottom.ordinal()] = 9;
+            } catch (NoSuchFieldError unused9) {
+            }
+            try {
+                f34659a[c.layout_alignParentTop.ordinal()] = 10;
+            } catch (NoSuchFieldError unused10) {
+            }
+            try {
+                f34659a[c.layout_centerVertical.ordinal()] = 11;
+            } catch (NoSuchFieldError unused11) {
+            }
+            try {
+                f34659a[c.layout_below.ordinal()] = 12;
+            } catch (NoSuchFieldError unused12) {
+            }
+            try {
+                f34659a[c.layout_above.ordinal()] = 13;
+            } catch (NoSuchFieldError unused13) {
+            }
+            try {
+                f34659a[c.layout_toLeftOf.ordinal()] = 14;
+            } catch (NoSuchFieldError unused14) {
+            }
+            try {
+                f34659a[c.layout_toRightOf.ordinal()] = 15;
+            } catch (NoSuchFieldError unused15) {
+            }
+            try {
+                f34659a[c.layout_toEndOf.ordinal()] = 16;
+            } catch (NoSuchFieldError unused16) {
+            }
+            try {
+                f34659a[c.layout_margin.ordinal()] = 17;
+            } catch (NoSuchFieldError unused17) {
+            }
+            try {
+                f34659a[c.layout_marginLeft.ordinal()] = 18;
+            } catch (NoSuchFieldError unused18) {
+            }
+            try {
+                f34659a[c.layout_marginRight.ordinal()] = 19;
+            } catch (NoSuchFieldError unused19) {
+            }
+            try {
+                f34659a[c.layout_marginTop.ordinal()] = 20;
+            } catch (NoSuchFieldError unused20) {
+            }
+            try {
+                f34659a[c.layout_marginBottom.ordinal()] = 21;
+            } catch (NoSuchFieldError unused21) {
+            }
+            try {
+                f34659a[c.layout_alignParentRight.ordinal()] = 22;
+            } catch (NoSuchFieldError unused22) {
+            }
+            try {
+                f34659a[c.layout_alignParentLeft.ordinal()] = 23;
+            } catch (NoSuchFieldError unused23) {
+            }
+            try {
+                f34659a[c.layout_alignTop.ordinal()] = 24;
+            } catch (NoSuchFieldError unused24) {
+            }
+            try {
+                f34659a[c.layout_alignLeft.ordinal()] = 25;
+            } catch (NoSuchFieldError unused25) {
+            }
+            try {
+                f34659a[c.layout_alignRight.ordinal()] = 26;
+            } catch (NoSuchFieldError unused26) {
+            }
+            try {
+                f34659a[c.layout_alignBottom.ordinal()] = 27;
+            } catch (NoSuchFieldError unused27) {
+            }
+            try {
+                f34659a[c.layout_centerInParent.ordinal()] = 28;
+            } catch (NoSuchFieldError unused28) {
+            }
+            try {
+                f34659a[c.layout_alignParentEnd.ordinal()] = 29;
+            } catch (NoSuchFieldError unused29) {
+            }
+        }
+    }
+
+    public MBExtMBridgeBaitClickView(@NonNull Context context) {
+        super(context);
+    }
+
+    public MBExtMBridgeBaitClickView(@NonNull Context context, @Nullable AttributeSet attributeSet) {
+        super(context);
+        try {
+            this.f34658m = com.mbridge.msdk.dycreator.utils.c.a(context, attributeSet);
+            setAttributeSet(attributeSet);
+            setLayoutParams(generateLayoutParams(attributeSet));
+            com.mbridge.msdk.dycreator.utils.c.a(this.f34658m, this);
+        } catch (Exception e11) {
+            o0.b("MBExtMBridgeBaitClickView", e11.getMessage());
+        }
+    }
+
+    public MBExtMBridgeBaitClickView(@NonNull Context context, @Nullable AttributeSet attributeSet, int i11) {
+        super(context, attributeSet, i11);
+    }
+
+    @Override // android.widget.RelativeLayout, android.view.ViewGroup
+    public RelativeLayout.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(0, 0);
+        HashMap mapB = b.a().b();
+        int attributeCount = attributeSet.getAttributeCount();
+        for (int i11 = 0; i11 < attributeCount; i11++) {
+            c cVar = (c) mapB.get(attributeSet.getAttributeName(i11));
+            if (cVar != null) {
+                switch (AnonymousClass1.f34659a[cVar.ordinal()]) {
+                    case 6:
+                        String attributeValue = attributeSet.getAttributeValue(i11);
+                        if (attributeValue.startsWith("fill") || attributeValue.startsWith("match")) {
+                            layoutParams.width = -1;
+                        } else if (attributeValue.startsWith("w")) {
+                            layoutParams.width = -2;
+                        } else {
+                            layoutParams.width = b.a().a(attributeValue);
+                        }
+                        break;
+                    case 7:
+                        String attributeValue2 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue2.startsWith("fill") || attributeValue2.startsWith("match")) {
+                            layoutParams.height = -1;
+                        } else if (attributeValue2.startsWith("wrap")) {
+                            layoutParams.height = -2;
+                        } else {
+                            layoutParams.height = b.a().a(attributeValue2);
+                        }
+                        break;
+                    case 8:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(14, -1);
+                        }
+                        break;
+                    case 9:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(12, -1);
+                        }
+                        break;
+                    case 10:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(10, -1);
+                        }
+                        break;
+                    case 11:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(15, -1);
+                        }
+                        break;
+                    case 12:
+                        String attributeValue3 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue3.startsWith("@+id")) {
+                            layoutParams.addRule(3, attributeValue3.substring(5).hashCode());
+                        }
+                        break;
+                    case 13:
+                        String attributeValue4 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue4.startsWith("@+id")) {
+                            layoutParams.addRule(2, attributeValue4.substring(5).hashCode());
+                        }
+                        break;
+                    case 14:
+                        String attributeValue5 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue5.startsWith("@+id")) {
+                            layoutParams.addRule(0, attributeValue5.substring(5).hashCode());
+                        }
+                        break;
+                    case 15:
+                        String attributeValue6 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue6.startsWith("@+id")) {
+                            layoutParams.addRule(1, attributeValue6.substring(5).hashCode());
+                        }
+                        break;
+                    case 16:
+                        String attributeValue7 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue7.startsWith("@+id")) {
+                            layoutParams.addRule(17, attributeValue7.substring(5).hashCode());
+                        }
+                        break;
+                    case 17:
+                        int iA = b.a().a(attributeSet.getAttributeValue(i11));
+                        layoutParams.setMargins(iA, iA, iA, iA);
+                        break;
+                    case 18:
+                        layoutParams.leftMargin = b.a().a(attributeSet.getAttributeValue(i11));
+                        break;
+                    case 19:
+                        layoutParams.rightMargin = b.a().a(attributeSet.getAttributeValue(i11));
+                        break;
+                    case 20:
+                        layoutParams.topMargin = b.a().a(attributeSet.getAttributeValue(i11));
+                        break;
+                    case 21:
+                        layoutParams.bottomMargin = b.a().a(attributeSet.getAttributeValue(i11));
+                        break;
+                    case 22:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(11, -1);
+                        }
+                        break;
+                    case 23:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(9, -1);
+                        }
+                        break;
+                    case 24:
+                        String attributeValue8 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue8.startsWith("@+id")) {
+                            layoutParams.addRule(6, attributeValue8.substring(5).hashCode());
+                        }
+                        break;
+                    case 25:
+                        String attributeValue9 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue9.startsWith("@+id")) {
+                            layoutParams.addRule(5, attributeValue9.substring(5).hashCode());
+                        }
+                        break;
+                    case 26:
+                        String attributeValue10 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue10.startsWith("@+id")) {
+                            layoutParams.addRule(7, attributeValue10.substring(5).hashCode());
+                        }
+                        break;
+                    case 27:
+                        String attributeValue11 = attributeSet.getAttributeValue(i11);
+                        if (attributeValue11.startsWith("@+id")) {
+                            layoutParams.addRule(8, attributeValue11.substring(5).hashCode());
+                        }
+                        break;
+                    case 28:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(13, -1);
+                        }
+                        break;
+                    case NOTIFICATION_REDIRECT_VALUE:
+                        if (attributeSet.getAttributeBooleanValue(i11, false)) {
+                            layoutParams.addRule(21, -1);
+                        }
+                        break;
+                }
+            }
+        }
+        return layoutParams;
+    }
+
+    @Override // com.mbridge.msdk.dycreator.baseview.inter.InterBase
+    public String getActionDes() {
+        Map<String, String> map = this.f34658m;
+        return (map == null || !map.containsKey("mbridgeAction")) ? "" : this.f34658m.get("mbridgeAction");
+    }
+
+    @Override // com.mbridge.msdk.dycreator.baseview.inter.InterBase
+    public String getBindDataDes() {
+        Map<String, String> map = this.f34658m;
+        return (map == null || !map.containsKey("mbridgeData")) ? "" : this.f34658m.get("mbridgeData");
+    }
+
+    @Override // com.mbridge.msdk.dycreator.baseview.inter.InterBase
+    public String getEffectDes() {
+        Map<String, String> map = this.f34658m;
+        return (map == null || !map.containsKey("mbridgeEffect")) ? "" : this.f34658m.get("mbridgeEffect");
+    }
+
+    @Override // com.mbridge.msdk.dycreator.baseview.inter.InterBase
+    public String getReportDes() {
+        Map<String, String> map = this.f34658m;
+        return (map == null || !map.containsKey("mbridgeReport")) ? "" : this.f34658m.get("mbridgeReport");
+    }
+
+    @Override // com.mbridge.msdk.dycreator.baseview.inter.InterBase
+    public String getStrategyDes() {
+        Map<String, String> map = this.f34658m;
+        return (map == null || !map.containsKey("mbridgeStrategy")) ? "" : this.f34658m.get("mbridgeStrategy");
+    }
+
+    public void setAttributeSet(AttributeSet attributeSet) {
+        String[] strArrSplit;
+        HashMap<String, c> mapC = b.a().c();
+        int attributeCount = attributeSet.getAttributeCount();
+        for (int i11 = 0; i11 < attributeCount; i11++) {
+            c cVar = mapC.get(attributeSet.getAttributeName(i11));
+            if (cVar != null) {
+                int i12 = AnonymousClass1.f34659a[cVar.ordinal()];
+                if (i12 == 1) {
+                    String attributeValue = attributeSet.getAttributeValue(i11);
+                    if (attributeValue.startsWith("@+id/")) {
+                        setId(attributeValue.substring(5).hashCode());
+                    }
+                } else if (i12 == 2) {
+                    String attributeValue2 = attributeSet.getAttributeValue(i11);
+                    if (attributeValue2.startsWith(Utils.SEPARATOR)) {
+                        try {
+                            strArrSplit = attributeValue2.split("-");
+                        } catch (Exception unused) {
+                            strArrSplit = null;
+                        }
+                        if (strArrSplit != null && strArrSplit.length <= 2) {
+                            setBackgroundColor(b.a().d(attributeSet.getAttributeValue(i11)));
+                        } else if (strArrSplit == null || strArrSplit.length != 3) {
+                            setBackgroundColor(b.a().d(attributeSet.getAttributeValue(i11)));
+                        } else {
+                            try {
+                                GradientDrawable gradientDrawable = new GradientDrawable(GradientOrientationUtils.getOrientation(strArrSplit[2]), new int[]{Color.parseColor(strArrSplit[0]), Color.parseColor(strArrSplit[1])});
+                                gradientDrawable.setGradientType(0);
+                                setBackground(gradientDrawable);
+                            } catch (Exception unused2) {
+                                setBackgroundColor(b.a().d(attributeSet.getAttributeValue(i11)));
+                            }
+                        }
+                    } else {
+                        if (attributeValue2.startsWith("@drawable/")) {
+                            attributeValue2 = attributeValue2.substring(10);
+                        }
+                        setBackgroundResource(g0.a(com.mbridge.msdk.foundation.controller.c.m().d(), attributeValue2, "drawable"));
+                    }
+                } else if (i12 == 3) {
+                    int iA = b.a().a(attributeSet.getAttributeValue(i11));
+                    setPadding(iA, iA, iA, iA);
+                } else if (i12 == 4) {
+                    setGravity(b.a().b(attributeSet.getAttributeValue(i11)));
+                } else if (i12 == 5) {
+                    String attributeValue3 = attributeSet.getAttributeValue(i11);
+                    if (!TextUtils.isEmpty(attributeValue3)) {
+                        if (attributeValue3.equals("invisible")) {
+                            setVisibility(4);
+                        } else if (attributeValue3.equalsIgnoreCase("gone")) {
+                            setVisibility(8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @Override // com.mbridge.msdk.dycreator.baseview.inter.InterBase
+    public void setDynamicReport(String str, CampaignEx campaignEx) {
+    }
+}

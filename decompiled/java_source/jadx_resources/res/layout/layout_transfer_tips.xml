@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tn.lib.view.bubbleview.BubbleGradientLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:angle="8dp"
+    app:arrowHeight="8dp"
+    app:arrowLocation="top"
+    app:arrowPosition="225dp"
+    app:arrowWidth="12dp"
+    app:gradientCenterColor="@color/main_gradient_center"
+    app:gradientEndColor="@color/main_gradient_end"
+    app:gradientStartColor="@color/main_gradient_start"
+    app:gradient_orientation="horizontal">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/download_tab_transfer_tips"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="6dp"/>
+    <ImageView
+        android:id="@+id/transfer_tips_close"
+        android:padding="6dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/ic_guide_close"
+        android:scaleType="fitXY"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="12dp"/>
+</com.tn.lib.view.bubbleview.BubbleGradientLinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.cloud.hisavana.sdk.common.widget.video.AdVideoView
+        android:layout_gravity="center"
+        android:id="@+id/ad_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="1dp"/>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:id="@+id/im_volume"
+        android:visibility="gone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/hisavana_volume_close"
+        android:contentDescription="TODO"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/im_repeat"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/hisavana_repeat"/>
+    <ProgressBar
+        android:layout_gravity="bottom"
+        android:id="@+id/ad_progress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:progressDrawable="@drawable/hisavana_ad_video_progress_bg"
+        android:indeterminateTint="#008438"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    app:bl_corners_radius="8dp"
+    app:bl_solid_color="@color/module_dark_80">
+    <com.noober.background.view.BLImageView
+        android:layout_gravity="start|center_vertical"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_download_more"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/white"/>
+    <TextView
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/download_transfer_later_tips"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="48dp"
+        style="@style/style_medium_text"/>
+    <ImageView
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/iv_close"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:src="@mipmap/ic_close_black"
+        android:layout_marginEnd="18.5dp"
+        app:tint="@color/white"/>
+    <com.tn.lib.view.CircleProgressBar
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/progress_bar_close"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="16dp"
+        app:progressBgColor="@color/white_40"
+        app:progressMax="100"
+        app:progressRadius="7dp"
+        app:progressRingsColor="@color/white"
+        app:progressStrokesWidth="1.5dp"/>
+</merge>

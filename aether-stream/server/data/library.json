@@ -1,0 +1,117 @@
+{
+  "watchlist": [
+    "mov-001",
+    "ser-101"
+  ],
+  "continueWatching": [
+    {
+      "contentId": "tmdb-mov-1007757",
+      "title": "Swapped",
+      "poster": "https://image.tmdb.org/t/p/w500/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "episodeInfo": null,
+      "progressSeconds": 3,
+      "totalSeconds": 734,
+      "percent": 0,
+      "lastWatched": "2026-11-01T13:54:16.722Z"
+    },
+    {
+      "contentId": "tmdb-tv-259909",
+      "title": "Dexter: Resurrection",
+      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
+      "episodeInfo": {
+        "season": 1,
+        "episode": 1,
+        "title": "Chapter 1: The Inception"
+      },
+      "progressSeconds": 81,
+      "totalSeconds": 734,
+      "percent": 11,
+      "lastWatched": "2026-11-01T13:58:21.702Z"
+    },
+    {
+      "contentId": "tmdb-mov-1560520",
+      "title": "Batman: Knightfall Part 1: Knightfall",
+      "poster": "https://image.tmdb.org/t/p/w500/360qdtu2hLnqMu8SVHMywn420w1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
+      "episodeInfo": null,
+      "progressSeconds": 192,
+      "totalSeconds": 734,
+      "percent": 26,
+      "lastWatched": "2026-11-01T13:50:23.484Z"
+    },
+    {
+      "contentId": "tmdb-tv-289517",
+      "title": "Dead-End Job",
+      "poster": "https://image.tmdb.org/t/p/w500/vrDDqk9PAkIs0PQAbW5G0yhPVS3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/cyH2fZUjIJjLmgpF3tgA5CSGz4L.jpg",
+      "episodeInfo": {
+        "season": 1,
+        "episode": 1,
+        "title": "Chapter 1: The Inception"
+      },
+      "progressSeconds": 158,
+      "totalSeconds": 734,
+      "percent": 22,
+      "lastWatched": "2026-11-01T13:50:10.823Z"
+    },
+    {
+      "contentId": "tmdb-tv-213562",
+      "title": "Crystal Lake",
+      "poster": "https://image.tmdb.org/t/p/w500/3ENhExiD2fcjk5FX0AcAXcvLu9N.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/wxiBsKFEOOFK8eQStWOykNORlXY.jpg",
+      "episodeInfo": {
+        "season": 1,
+        "episode": 1,
+        "title": "Chapter 1: The Inception"
+      },
+      "progressSeconds": 2,
+      "totalSeconds": 734,
+      "percent": 0,
+      "lastWatched": "2026-11-01T13:49:57.666Z"
+    },
+    {
+      "contentId": "mov-001",
+      "title": "Tears of Steel: The Cybernetic Nexus",
+      "poster": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=80",
+      "backdrop": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1600&auto=format&fit=crop&q=85",
+      "progressSeconds": 1420,
+      "totalSeconds": 6720,
+      "percent": 21,
+      "lastWatched": "2026-11-01T13:49:44.800Z"
+    }
+  ],
+  "history": [
+    {
+      "contentId": "tmdb-mov-1007757",
+      "title": "Swapped",
+      "poster": "https://image.tmdb.org/t/p/w500/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "timestamp": "2026-11-01T13:54:16.722Z"
+    },
+    {
+      "contentId": "tmdb-tv-259909",
+      "title": "Dexter: Resurrection",
+      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
+      "timestamp": "2026-11-01T13:50:39.312Z"
+    },
+    {
+      "contentId": "tmdb-mov-1560520",
+      "title": "Batman: Knightfall Part 1: Knightfall",
+      "poster": "https://image.tmdb.org/t/p/w500/360qdtu2hLnqMu8SVHMywn420w1.jpg",
+      "timestamp": "2026-11-01T13:50:19.458Z"
+    },
+    {
+      "contentId": "tmdb-tv-289517",
+      "title": "Dead-End Job",
+      "poster": "https://image.tmdb.org/t/p/w500/vrDDqk9PAkIs0PQAbW5G0yhPVS3.jpg",
+      "timestamp": "2026-11-01T13:50:10.823Z"
+    },
+    {
+      "contentId": "tmdb-tv-213562",
+      "title": "Crystal Lake",
+      "poster": "https://image.tmdb.org/t/p/w500/3ENhExiD2fcjk5FX0AcAXcvLu9N.jpg",
+      "timestamp": "2026-11-01T13:49:57.666Z"
+    }
+  ]
+}

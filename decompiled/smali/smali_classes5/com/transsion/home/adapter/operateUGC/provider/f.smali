@@ -1,0 +1,35 @@
+.class public final synthetic Lcom/transsion/home/adapter/operateUGC/provider/f;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic a:Lcom/transsion/home/adapter/operateUGC/provider/FeedsGridUGCProvider;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/transsion/home/adapter/operateUGC/provider/FeedsGridUGCProvider;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/transsion/home/adapter/operateUGC/provider/f;->a:Lcom/transsion/home/adapter/operateUGC/provider/FeedsGridUGCProvider;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/transsion/home/adapter/operateUGC/provider/f;->a:Lcom/transsion/home/adapter/operateUGC/provider/FeedsGridUGCProvider;
+
+    invoke-static {v0}, Lcom/transsion/home/adapter/operateUGC/provider/FeedsGridUGCProvider;->D(Lcom/transsion/home/adapter/operateUGC/provider/FeedsGridUGCProvider;)Lhl/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method

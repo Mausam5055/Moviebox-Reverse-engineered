@@ -1,0 +1,765 @@
+[
+  {
+    "path": "/loginapi/select_country",
+    "className": "com.transsnet.login.country.LoginSelectCountryActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/Login/Api",
+    "className": "com.transsnet.login.LoginProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/download/ugc_my_downloads",
+    "className": "com.transsnet.downloader.ugc.activity.UGCMyDownloadsActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/download/ugc_collection_list",
+    "className": "com.transsnet.downloader.ugc.activity.UGCDownloadCollectionListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/download/transfer",
+    "className": "com.transsnet.downloader.activity.TransferActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/download/series_list",
+    "className": "com.transsnet.downloader.activity.DownloadSeriesListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/download/panel_activity",
+    "className": "com.transsnet.downloader.activity.DownloadPanelActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/download/play_history",
+    "className": "com.transsnet.downloader.activity.AllHistoricalPlayRecordActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/download/provider",
+    "className": "com.transsnet.downloader.DownloadManagerApi",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/wrapperAd/WrapperAdProvider",
+    "className": "com.transsion.wrapperad.WrapperAdProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/web/web",
+    "className": "com.transsion.web.activity.WebActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/stream/details",
+    "className": "com.transsion.videodetail.provider.StreamDetailServiceImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/playvideo/music_detail",
+    "className": "com.transsion.videodetail.music.ui.MusicDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/playvideo/detail",
+    "className": "com.transsion.videodetail.StreamDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/tv_download_web_link",
+    "className": "com.transsion.usercenter.tvlink.TvDownloadWebLinkActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/user_center_labels_feedback",
+    "className": "com.transsion.usercenter.setting.labelsfeedback.LabelsFeedbackActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/user_center_feedback",
+    "className": "com.transsion.usercenter.setting.feedback.UserSettingFeedbackActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/watch_option",
+    "className": "com.transsion.usercenter.setting.SettingWatchActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/setting_privacy_data",
+    "className": "com.transsion.usercenter.setting.SettingPrivacyDataActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/setting_notice",
+    "className": "com.transsion.usercenter.setting.SettingNoticeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/setting",
+    "className": "com.transsion.usercenter.setting.SettingActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/see",
+    "className": "com.transsion.usercenter.profile.see.ProfileSeeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/user_profile",
+    "className": "com.transsion.usercenter.profile.UserProfileActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/qr_code",
+    "className": "com.transsion.usercenter.profile.ProfileQRCodeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/user_center",
+    "className": "com.transsion.usercenter.profile.ProfileActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/message_detail",
+    "className": "com.transsion.usercenter.message.detail.MessageDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/user_room_message",
+    "className": "com.transsion.usercenter.message.UserRoomMessageActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/user_message",
+    "className": "com.transsion.usercenter.message.UserMessageActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/kids/pin_management",
+    "className": "com.transsion.usercenter.kids.PinManagementActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/kids/manage_profiles",
+    "className": "com.transsion.usercenter.kids.ManageProfilesActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/device_management",
+    "className": "com.transsion.usercenter.devicemanagement.activity.DeviceManagementActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/ugc_video/detail",
+    "className": "com.transsion.ugcvideodetail.activity.UGCVideoDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/ugc_video/local_detail",
+    "className": "com.transsion.ugcvideodetail.activity.UGCLocalVideoDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/transfer/wifi_create",
+    "className": "com.transsion.transfer.wifi.ui.WifiCreateActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/transfer/wifi_connect",
+    "className": "com.transsion.transfer.wifi.ui.WifiConnectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/transfer/status",
+    "className": "com.transsion.transfer.impl.TransferStatusActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/transfer/transfer_provider",
+    "className": "com.transsion.transfer.TransferProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/push",
+    "className": "com.transsion.subroom.push.PushProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/main/page_not_available",
+    "className": "com.transsion.subroom.activity.NotAvailableActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/main/tab",
+    "className": "com.transsion.subroom.activity.MainActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "push/refresh",
+    "className": "com.transsion.startup.work.RefreshConfigImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/ugc_shorts/detail",
+    "className": "com.transsion.shorttv_pugc.ui.activity.ShortTvListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/ugc_shorts/favorite",
+    "className": "com.transsion.shorttv_pugc.ui.activity.ShortTVFavoriteActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/shorts/detail",
+    "className": "com.transsion.shorttv.ui.activity.ShortTvListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/shorts/favorite",
+    "className": "com.transsion.shorttv.ui.activity.ShortTVFavoriteActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/shorttv/playlist",
+    "className": "com.transsion.shorttv._channel.ui.activity.ShortTvPlayListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/shorttv/movieFilter",
+    "className": "com.transsion.shorttv._channel.ui.activity.ShortTvMovieFilterActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/shorttv/category",
+    "className": "com.transsion.shorttv._channel.ui.activity.ShortTvCategoryActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/ugc_search/search_manager",
+    "className": "com.transsion.search_pugc.activity.SearchManagerActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/search/activity/search_manager",
+    "className": "com.transsion.search.activity.SearchManagerActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/subscription/my_subscription",
+    "className": "com.transsion.room.sub.activity.subscription.SubscriptionListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/subscription/subscription",
+    "className": "com.transsion.room.sub.activity.subscription.SubscriptionActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/ugc/likes",
+    "className": "com.transsion.room.sub.activity.likes.UgcLikesActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/group/detail",
+    "className": "com.transsion.room.provider.IGroupDetailService",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/room/list",
+    "className": "com.transsion.room.activity.RoomListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/room/home",
+    "className": "com.transsion.room.activity.RoomHomeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/room/detail",
+    "className": "com.transsion.room.activity.RoomDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/room/others_list",
+    "className": "com.transsion.room.activity.OthersRoomListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/room/my",
+    "className": "com.transsion.room.activity.MyRoomActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/room/hot_room",
+    "className": "com.transsion.room.activity.HotRoomsActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/room/create",
+    "className": "com.transsion.room.activity.CreateRoomActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/rewards/center",
+    "className": "com.transsion.rewardscenter.ui.RewardsCenterActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/rewards/claim_reward",
+    "className": "com.transsion.rewardscenter.ui.ClaimRewardActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/push/service",
+    "className": "com.transsion.push.utils.PushApiImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/push/test",
+    "className": "com.transsion.push.PushTestActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/publish/location_list",
+    "className": "com.transsion.publish.ui.SelectLocationActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/publish/activity/film_review",
+    "className": "com.transsion.publish.ui.FilmReviewActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/publish/Api",
+    "className": "com.transsion.publish.PublishProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/postdetail/favorite",
+    "className": "com.transsion.postdetail.ui.activity.favorite.FavoriteActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/postdetail/feedback_input",
+    "className": "com.transsion.postdetail.ui.activity.PostFeedbackInputActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/post/detailVideo",
+    "className": "com.transsion.postdetail.ui.activity.PostDetailVideoActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/post/detail",
+    "className": "com.transsion.postdetail.ui.activity.PostDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/video/detail",
+    "className": "com.transsion.postdetail.ui.activity.LocalVideoDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/video/download",
+    "className": "com.transsion.postdetail.provider.DownloadProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/profile/my_activity",
+    "className": "com.transsion.postdetail.myactivity.MyActivityActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/post/detailapi",
+    "className": "com.transsion.postdetail.impl.PostDetailApiImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/post/my_comment",
+    "className": "com.transsion.postdetail.comment.ui.CommentListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/movie/staff",
+    "className": "com.transsion.moviedetail.staff.MovieStaffActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/movie/details",
+    "className": "com.transsion.moviedetail.provider.MovieDetailServiceImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/movie/detail",
+    "className": "com.transsion.moviedetail.activity.MovieDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/member/point_history",
+    "className": "com.transsion.member.history.PointsHistoryActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/member/MemberTaskAdActivity",
+    "className": "com.transsion.member.ad.view.MemberTaskAdActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/member/MemberProvider",
+    "className": "com.transsion.member.MemberProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/member/MemberPremiumFragment",
+    "className": "com.transsion.member.MemberPremiumFragment",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/member/MemberFragment",
+    "className": "com.transsion.member.MemberFragment",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/member/MemberActivity",
+    "className": "com.transsion.member.MemberActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/tv_live_detail",
+    "className": "com.transsion.home.tv.TvLiveDetailActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/playlist",
+    "className": "com.transsion.home.category.PlayListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/category",
+    "className": "com.transsion.home.category.CategoryActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/ugc_ranking",
+    "className": "com.transsion.home.activity.UGCRankingActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/hashtag",
+    "className": "com.transsion.home.activity.UGCHashTagActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/ugc_filter",
+    "className": "com.transsion.home.activity.UGCFilterActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/ugc_film_list",
+    "className": "com.transsion.home.activity.UGCFilmListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/rank/all",
+    "className": "com.transsion.home.activity.RankAllActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/operatePage",
+    "className": "com.transsion.home.activity.OperateActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/movieFilter",
+    "className": "com.transsion.home.activity.MovieFilterActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/home/filter",
+    "className": "com.transsion.home.activity.FilterActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/fission/provider",
+    "className": "com.transsion.fission.FissionProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/fission/invitation_code",
+    "className": "com.transsion.fission.FissionInvitationCodeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/edu/courseList",
+    "className": "com.transsion.edcation.list.MyCourseListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/edu/history",
+    "className": "com.transsion.edcation.history.EducationHistoryActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/commercialize/TaskCenterProvider",
+    "className": "com.transsion.commercialization.task.TaskCenterProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/commercialize/PsLinkProvider",
+    "className": "com.transsion.commercialization.pslink.PsLinkProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/commercialize/GameResTabProvider",
+    "className": "com.transsion.commercialization.gameres.GameResProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/commercialize/CommonDialogProvider",
+    "className": "com.transsion.commercialization.dialog.CommonDialogProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/commercial/gamecenter",
+    "className": "com.transsion.commercialization.aha.AhaGameAllActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/commercialize/InterceptReportProvider",
+    "className": "com.transsion.commercialization.InterceptReportProvider",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/audio/float",
+    "className": "com.transsion.audio.FloatingApiImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/audio/api",
+    "className": "com.transsion.audio.AudioApiImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  }
+]

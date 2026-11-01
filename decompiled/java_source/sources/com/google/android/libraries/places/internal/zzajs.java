@@ -1,0 +1,15 @@
+package com.google.android.libraries.places.internal;
+
+import sun.misc.Unsafe;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final /* synthetic */ class zzajs {
+    public static /* synthetic */ boolean zza(Unsafe unsafe, Object obj, long j11, Object obj2, Object obj3) {
+        while (!a.a(unsafe, obj, j11, obj2, obj3)) {
+            if (unsafe.getObject(obj, j11) != obj2) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

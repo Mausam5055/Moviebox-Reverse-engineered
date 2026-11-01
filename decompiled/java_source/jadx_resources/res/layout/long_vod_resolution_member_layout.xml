@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.transsion.baseui.widget.GradientTextView
+        android:textSize="16sp"
+        android:id="@+id/gradientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        style="@style/style_medium_text"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/ivMember"
+        android:layout_width="24dp"
+        android:layout_height="16dp"
+        android:src="@drawable/long_vod_member_1"
+        android:layout_marginStart="4dp"/>
+</LinearLayout>

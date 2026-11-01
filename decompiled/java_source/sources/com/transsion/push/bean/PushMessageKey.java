@@ -1,0 +1,51 @@
+package com.transsion.push.bean;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class PushMessageKey {
+    public static final String KEY_APP_CHANNEL_ID = "noti_channel_id";
+    public static final String KEY_APP_CHANNEL_NAME = "noti_channel_name";
+    public static final String KEY_APP_GROUP_ID = "noti_group_id";
+    public static final String KEY_APP_GROUP_MAX_COUNT = "noti_group_max_count";
+    public static final String KEY_APP_LAYOUT_STYLE_ID = "noti_layout_id";
+    public static final String KEY_APP_NAME = "app_name";
+    public static final String KEY_DISPLAY_POLICY = "display_policy";
+    public static final String KEY_NOTI_BTN = "noti_btn";
+    public static final String KEY_NOTI_BTN_BG_COLOR = "noti_btn_background_color";
+    public static final String KEY_NOTI_BTN_EX = "noti_btn_ex";
+    public static final String KEY_NOTI_BTN_WORD_COLOR = "noti_btn_word_color";
+    public static final String KEY_NOTI_CLICK_URLS = "noti_click_urls";
+    public static final String KEY_NOTI_DESC = "noti_desc";
+    public static final String KEY_NOTI_EX_TYPE = "noti_ex_type";
+    public static final String KEY_NOTI_FLOAT_NOTICE = "noti_float";
+    public static final String KEY_NOTI_ICON = "noti_icon";
+    public static final String KEY_NOTI_IGNORE_EXPIRE = "noti_ignore_expire";
+    public static final String KEY_NOTI_IMG = "noti_img";
+    public static final String KEY_NOTI_IMG_EX = "noti_img_ex";
+    public static final String KEY_NOTI_IMP_URLS = "noti_imp_urls";
+    public static final String KEY_NOTI_IS_HEADSUP = "noti_is_headsup";
+    public static final String KEY_NOTI_OPEN_CONTENT = "noti_open_content";
+    public static final String KEY_NOTI_OPEN_TYPE = "noti_open_type";
+    public static final String KEY_NOTI_OPTIONAL_ICON = "noti_optional_icon";
+    public static final String KEY_NOTI_RETRACE_MSG_ID = "tcm_target_msg_id";
+    public static final String KEY_NOTI_SMALL_ICON = "noti_small_icon";
+    public static final String KEY_NOTI_SMALL_ICON_COLOR = "noti_small_icon_color";
+    public static final String KEY_NOTI_TITLE = "noti_title";
+    public static final String KEY_NOTI_TITLE_EX = "noti_title_ex";
+    public static final String KEY_NOTI_TXT_EX = "noti_txt_ex";
+    public static final String KEY_NOTI_TYPE = "noti_type";
+    public static final String KEY_TCM_MATERIAL_ID = "tcm_material_id";
+    public static final String KEY_TCM_MSG_ID = "tcm_msg_id";
+    public static final String KEY_TCM_MSG_PKG = "tcm_msg_pkg";
+    public static final String KEY_TCM_MSG_PKGNAME = "tcm_msg_pkgname";
+    public static final String KEY_TCM_MSG_PRIORITY = "tcm_msg_priority";
+    public static final String KEY_TCM_MSG_RPKG = "tcm_msg_rpkg";
+    public static final String KEY_TCM_MSG_SDKSHOW = "tcm_msg_sdkshow";
+    public static final String KEY_TCM_MSG_TIMESTAMP = "tcm_msg_timestamp";
+    public static final String KEY_TCM_MSG_TTL = "tcm_msg_ttl";
+    public static final String KEY_TCM_MSG_TYPE = "tcm_msg_type";
+    public static final String KEY_TCM_SCHEDULE_DATE = "tcm_schedule_date";
+    public static final String KEY_TCM_SEQ = "tcm_seq";
+    public static final String KEY_TCM_SOURCE_TYPE = "tcm_source_type";
+    public static final String KEY_TCM_TAG = "tcm_tag";
+    public static final String KEY_TRANS_DATA = "trans_data";
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="28dp">
+    <com.tn.lib.widget.TnTextView
+        android:textSize="12sp"
+        android:textColor="@color/white_80"
+        android:id="@+id/titleTv"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        style="@style/style_text_400"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/brand_new_50"
+        android:id="@+id/copyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copy_link"
+        style="@style/style_text_600"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

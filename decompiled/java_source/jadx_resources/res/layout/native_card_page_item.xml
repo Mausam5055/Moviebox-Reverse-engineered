@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/gray_dark_80"
+        app:cardCornerRadius="6dp">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@+id/ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@+id/ad_cover"
+            android:background="@color/ad_black_20"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/swipe_guide"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/finger_swipe_right"
+                android:alpha="0"
+                android:layout_marginStart="70dp"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

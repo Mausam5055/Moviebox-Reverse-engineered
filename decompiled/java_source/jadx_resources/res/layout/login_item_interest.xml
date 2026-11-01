@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/login_shape_interest_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_interest"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@mipmap/login_interest_sport"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="15sp"
+        android:textColor="@color/login_color_interest_tv"
+        android:gravity="center"
+        android:id="@+id/tv_interest"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginStart="4dp"/>
+</LinearLayout>
